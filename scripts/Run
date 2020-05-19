@@ -27,6 +27,7 @@ else
 fi
 
 echo "Start at `date`" | tee -a $logfile
+starttime=`date "+%s"`
 if [ "${CCX_DEFAULT_SOLVER}" != "" ]; then
     echo "ccx module: ${CCX_EXE} (SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
 else
@@ -162,4 +163,6 @@ echo "check the existence of file $errorfile"
 echo "if this file does not exist, the present results"
 echo "agree with the reference results"
 echo " "
-echo "Finish at `date`" | tee -a $logfile
+endtime=`date "+%s"`
+((elapse=endtime-starttime))
+echo "Finish at `date`  Total Time: $elapse [sec]" | tee -a $logfile
