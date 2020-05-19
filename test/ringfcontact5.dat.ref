@@ -83,3 +83,31 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
 
           0.5853828E-09   0.5853828E-09   0.5866466E-09   0.1343912E-08   0.1109096E-09   0.1453873E-08
 
+
+     E I G E N M O D E   T U R N I N G   D I R E C T I O N
+
+    Axis reference direction:  0.0000E+00  0.0000E+00 -0.1000E+01
+
+  NODAL   MODE NO     TURNING DIRECTION (F=FORWARD,B=BACKWARD)
+ DIAMETER
+
+    1          1          B
+    1          2          B
+    1          3          B
+    1          4          B
+    1          5          F
+    1          6          F
+    1          7          B
+    1          8          B
+    1          9          B
+    1         10          B
+    1         11          F
+    1         12          F
+    1         13          B
+    1         14          B
+    1         15          B
+    1         16          B
+    1         17          B
+    1         18          B
+    1         19          F
+    1         20          F

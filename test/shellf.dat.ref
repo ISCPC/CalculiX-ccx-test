@@ -76,7 +76,7 @@ P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.19000
 
  displacements (vx,vy,vz) for set N15 and time  0.1900000E+05
 
-        15 -3.104635E-14  3.128022E-15 -2.945862E+00
+        15 -3.104548E-14  3.128022E-15 -2.945862E+00
 
 P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.1924691885636E+05 (CYCLES/TIME)
 
@@ -96,11 +96,11 @@ P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.19246
 
  displacements (vx,vy,vz) for set N15 and time  0.1924692E+05
 
-        15  1.301259E-15 -4.217669E-16  1.381178E-01
+        15  1.301476E-15 -4.217669E-16  1.381178E-01
 
  displacements (vx,vy,vz) for set N15 and time  0.1924692E+05
 
-        15 -1.195914E-10  1.205001E-11 -1.134828E+04
+        15 -1.195986E-10  1.205001E-11 -1.134828E+04
 
 P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.2000000000000E+05 (CYCLES/TIME)
 
@@ -124,4 +124,4 @@ P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.20000
 
  displacements (vx,vy,vz) for set N15 and time  0.2000000E+05
 
-        15 -3.337174E-15  3.362421E-16 -3.166612E-01
+        15 -3.337283E-15  3.362421E-16 -3.166612E-01

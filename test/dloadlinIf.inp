@@ -1,6 +1,8 @@
 **
 **   Structure: cantilever plate.
 **   Test objective: C3D8I elements (frequencies).
+**                   cf. example dloadlin20f.inp for a
+**                   comparison with c3d20
 **
 *NODE, NSET=nall
 1, 0.000e+00, 3.000e+01, 0.000e+00

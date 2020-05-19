@@ -1,6 +1,7 @@
 **
 **   Structure: slender disk mounted on a long axis
-**   Test objective: *COMPLEX FREQUENCY.
+**   Test objective: *COMPLEX FREQUENCY,
+**                   output of moments of inertia.
 **
 *NODE, NSET=Nall
        1,6.123233995737e-17,1.000000000000e+00,0.000000000000e+00
@@ -3429,16 +3430,69 @@ Nfix,1,3
  210000., 0.3
 *DENSITY
 7.8e-9
+** Names based on disk
+*ELSET,ELSET=Edisk 
+161, 
+162, 
+163, 
+164, 
+165, 
+166, 
+167, 
+168, 
+169, 
+170, 
+171, 
+172, 
+173, 
+174, 
+175, 
+176, 
+337, 
+338, 
+339, 
+340, 
+341, 
+342, 
+343, 
+344, 
+345, 
+346, 
+347, 
+348, 
+349, 
+350, 
+351, 
+352, 
+353, 
+354, 
+355, 
+356, 
+357, 
+358, 
+359, 
+360, 
+361, 
+362, 
+363, 
+364, 
+365, 
+366, 
+367, 
+368, 
 *Step,nlgeom
 *Static
 *dload
 Eall,centrif,3.0853e8,0.,0.,0.,0.,0.,1. 
+*el print,elset=Edisk,TOTALS=ONLY
+EVOL,EMAS
 *end step
 *step,perturbation
 *frequency,STORAGE=YES
  10,
+*el print
 *end step
-*step
+*step,perturbation
 *complex frequency,coriolis
  10,
 *end step

@@ -2,6 +2,8 @@
 **   Structure: spring + mass + dashpot.
 **   Test objective: dynamic calculation of a spring-mass-dashpot
 **                   system
+**                   spring=10.,damping factor c=1.e-5,mass=6.24e-11
+**                   half period=8.01e-6, max=0.6105
 **
 *NODE,NSET=NALL
 1,0.,0.,0.

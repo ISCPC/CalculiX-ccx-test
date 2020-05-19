@@ -1,12 +1,12 @@
     1C
     1UModel: beam     Date: 10-Mar-1998                                 
     1UUSER                                                              
-    1UDATE              15.december.2018                                
-    1UTIME              15:51:21                                        
+    1UDATE              24.november.2019                                
+    1UTIME              19:36:58                                        
     1UHOST                                                              
     1UPGM               CalculiX                                        
-    1UVERSION           Version 2.15                             
-    1UCOMPILETIME       Sa 15. Dez 14:32:01 CET 2018                    
+    1UVERSION           Version 2.16                             
+    1UCOMPILETIME       So 24. Nov 18:30:58 CET 2019                    
     1UDIR                                                               
     1UDBN                                                               
     1UMAT    1EL                                                        
@@ -372,7 +372,12 @@
  -2       186       260       261       160        77       189       101        26        27       102
  -3
     1PSTEP                         1           1           1          
-  100CL  101 0.00000E+00         261                     3    1           1
+    1PGM                1.000000E+00                                  
+    1PGK                0.000000E+00                                  
+    1PHID                         -1                                  
+    1PSUBC                         0                                  
+    1PMODE                         1                                  
+  100CL  101 0.00000E+00         261                     2    1MODAL      1
  -4  DISP        4    1
  -5  D1          1    2    1    0
  -5  D2          1    2    2    0

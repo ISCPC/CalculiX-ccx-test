@@ -358,7 +358,7 @@ Model: beam     Date: 10-Mar-1998
 100, 
 101, 
 102, 
-*SUBMODEL,TYPE=NODE,INPUT=beamp.frd
+*SUBMODEL,TYPE=NODE,INPUT=beamp.frd.ref
 Nall
 *STEP
 *STATIC

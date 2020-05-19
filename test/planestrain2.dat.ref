@@ -10,7 +10,7 @@
          7  1.857143E-04  2.166667E-04  0.000000E+00
          8  9.285714E-05  0.000000E+00  0.000000E+00
 
- strains (elem, integ.pnt.,exx,eyy,ezz,exy,exz,eyz) forset EALL and time  0.1000000E+01
+ strains (elem, integ.pnt.,exx,eyy,ezz,exy,exz,eyz) for set EALL and time  0.1000000E+01
 
          1   1 -1.857143E-04  4.333333E-04  0.000000E+00 -1.818830E-12  3.903128E-18  2.276825E-18
          1   2 -1.857143E-04  4.333333E-04  0.000000E+00 -3.195355E-12  2.818926E-18 -9.540979E-18

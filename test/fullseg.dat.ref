@@ -54,6 +54,24 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
           0.2042036E-09   0.2043993E-09   0.2043993E-09   0.1020667E-09   0.9969532E-11   0.9333374E-10
 
 
+     E I G E N M O D E   T U R N I N G   D I R E C T I O N
+
+    Axis reference direction:  0.1000E+01  0.0000E+00  0.0000E+00
+
+  NODAL   MODE NO     TURNING DIRECTION (F=FORWARD,B=BACKWARD)
+ DIAMETER
+
+    0          1          B
+    0          2          F
+    0          3          B
+    0          4          F
+    0          5          F
+    0          6          F
+    0          7          F
+    0          8          B
+    0          9          B
+    0         10          F
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -109,6 +127,24 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
           0.2043993E-09   0.2034610E-09   0.2034610E-09   0.1019397E-09   0.9966276E-11   0.9322058E-10
 
 
+     E I G E N M O D E   T U R N I N G   D I R E C T I O N
+
+    Axis reference direction:  0.1000E+01  0.0000E+00  0.0000E+00
+
+  NODAL   MODE NO     TURNING DIRECTION (F=FORWARD,B=BACKWARD)
+ DIAMETER
+
+    1          1          B
+    1          2          B
+    1          3          B
+    1          4          B
+    1          5          B
+    1          6          B
+    1          7          B
+    1          8          B
+    1          9          B
+    1         10          B
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -163,3 +199,21 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
 
           0.2032619E-09   0.2030537E-09   0.2030537E-09   0.1015925E-09   0.9964569E-11   0.9291861E-10
 
+
+     E I G E N M O D E   T U R N I N G   D I R E C T I O N
+
+    Axis reference direction:  0.1000E+01  0.0000E+00  0.0000E+00
+
+  NODAL   MODE NO     TURNING DIRECTION (F=FORWARD,B=BACKWARD)
+ DIAMETER
+
+    2          1          B
+    2          2          B
+    2          3          B
+    2          4          B
+    2          5          B
+    2          6          B
+    2          7          B
+    2          8          B
+    2          9          B
+    2         10          B
