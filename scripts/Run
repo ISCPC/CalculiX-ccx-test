@@ -1,0 +1,165 @@
+#!/bin/bash
+
+#rm -f error.*
+
+tempfile=temp.$$
+errorfile=error.$$
+logfile=log.$$
+total=0
+ok=0
+ng=0
+fault=0
+
+export CCX_DEFAULT_SOLVER=SPOOLES
+export OMP_NUM_THREADS=1
+#CCX_EXE=~/CalculiX/bin/ccx_2.15_20200415
+DEFAULT_CCX_EXE=~/CalculiX/bin/ccx_2.16
+
+if [ $# -ge 1 ]; then
+    if [ -x $1 ]; then
+        CCX_EXE=$1
+    else
+        echo "ERROR: $1 is not exacutable."
+        exit 1
+    fi
+else
+    CCX_EXE=${DEFAULT_CCX_EXE}
+fi
+
+echo "Start at `date`" | tee -a $logfile
+if [ "${CCX_DEFAULT_SOLVER}" != "" ]; then
+    echo "ccx module: ${CCX_EXE} (SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
+else
+    echo "ccx module: ${CCX_EXE} (SOLVER=default), THREADS=$OMP_NUM_THREADS" | tee -a $logfile
+fi
+
+for i in ../test/*.inp; do
+
+#        echo " "
+#        echo "example ${i%.inp}"
+#        echo " "
+    echo -n "${i%.inp}: " | tee -a $logfile
+    echo "=== ${i%.inp} ===" >> $tempfile
+    ((total=total+1))
+
+#
+#       removing the old .dat and .frd file, if any
+#
+
+    rm -f ${i%.inp}.dat
+    rm -f ${i%.inp}.frd
+
+#
+#       executing CalculiX and generating the .dat and
+#       the .frd file
+#
+
+    ${CCX_EXE} ${i%.inp} >> $tempfile 2>&1
+    if [ $? -ne 0 ]; then
+        echo "FAULT" | tee -a $logfile
+        ((fault=fault+1))
+        continue
+    fi
+
+#
+#       check whether the .dat and .dat.ref files exist
+#
+    if [ ! -f ${i%.inp}.dat ]; then
+	    echo "${i%.inp}.dat does not exist" >> $errorfile
+        echo "NG" | tee -a $logfile
+        ((ng=ng+1))
+        continue
+    fi
+    if [ ! -f ${i%.inp}.dat.ref ]; then
+        echo "${i%.inp}.dat.ref does not exist" >> $errorfile
+        echo "NG" | tee -a $logfile
+        ((ng=ng+1))
+        continue
+    fi
+#
+#       check whether the .dat and .dat.ref files have the same length
+#
+
+    export sum1=`wc -l ${i%.inp}.dat | awk '{print$1}'`
+    export sum2=`wc -l ${i%.inp}.dat.ref | awk '{print$1}'`
+    if [ $sum1 != $sum2 ]; then
+        echo "${i%.inp}.dat and ${i%.inp}.dat.ref do not have the same size !!!!!!!!!!" >> $errorfile
+        echo " ">> $errorfile
+        echo "NG" | tee -a $logfile
+        ((ng=ng+1))
+        continue
+    fi
+#
+#       check whether the .dat file contains NaN
+#
+#    if grep "NaN" ${i%.inp}.dat ; then
+    grep "NaN" ${i%.inp}.dat >> $errorfile 2>&1
+    if [ $? -eq 0 ] ; then
+        echo "${i%.inp}.dat contains NaN !!!!!!!!!!" >> $errorfile
+        echo " " >> $errorfile
+        echo "NG" | tee -a $logfile
+        ((ng=ng+1))
+        continue
+    fi
+
+#
+#       check whether the numbers in the .dat and .dat.ref files
+#       do not differ by more than a given amount (defined in file
+#       datcheck.pl)
+#
+    ./datcheck.pl ${i%.inp} >> $errorfile
+#
+#       check whether the .frd or the .frd.ref file exists
+#
+
+#    if grep "^ -5" ${i%.inp}.frd  ||[ -f ${i%.inp}.frd.ref ] ; then
+    grep "^ -5" ${i%.inp}.frd  >> $errorfile 2>&1
+    if [ $? -eq 0 ] || [ -f ${i%.inp}.frd.ref ] ; then
+#
+#           check that both files exist
+#
+        if [ ! -f ${i%.inp}.frd ]; then
+            echo "${i%.inp}.frd does not exist" >> $errorfile
+            echo "NG" | tee -a $logfile
+            ((ng=ng+1))
+            continue
+        fi
+        if [ ! -f ${i%.inp}.frd.ref ]; then
+            echo "${i%.inp}.frd.ref does not exist" >> $errorfile
+            echo "NG" | tee -a $logfile
+            ((ng=ng+1))
+            continue
+        fi
+#
+#           check whether the .frd and .frd.ref files have the same length
+#
+	    
+        export sum1=`wc -l ${i%.inp}.frd | awk '{print$1}'`
+        export sum2=`wc -l ${i%.inp}.frd.ref | awk '{print$1}'`
+        if [ $sum1 != $sum2 ]; then
+            echo "${i%.inp}.frd and ${i%.inp}.frd.ref do not have the same size !!!!!!!!!!!!!!!!!!!!!!" >> $errorfile
+            echo " ">> $errorfile
+            echo "NG" | tee -a $logfile
+            ((ng=ng+1))
+            continue
+        fi
+#
+#           check whether the numbers in the .frd and .frd.ref files
+#           do not differ by more than a given amount (defined in file
+#           frdcheck.pl)
+#
+        ./frdcheck.pl ${i%.inp} >> $errorfile
+            
+    fi
+    echo "OK" | tee -a $logfile
+    ((ok=ok+1))
+done
+
+rm -f spooles.out *.nam *.mtx fort.* dummy finemesh.*
+#rm -f $tempfile
+echo "TOTAL/OK/NG/FAULT: $total / $ok / $ng / $fault" | tee -a $logfile
+echo "check the existence of file $errorfile"
+echo "if this file does not exist, the present results"
+echo "agree with the reference results"
+echo " "
+echo "Finish at `date`" | tee -a $logfile

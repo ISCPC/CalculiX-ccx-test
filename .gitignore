@@ -1,0 +1,17 @@
+test/*.12d
+test/*.cvg
+test/*.dat
+test/*.frd
+test/*.sta
+test/*.net
+test/*.eig
+test/*.equ
+test/*.stm
+test/*.rin
+test/*.rout
+test/*.fin
+test/*.fcv
+test/*.vwf
+scripts/error.*
+scripts/temp.*
+scripts/log.*
