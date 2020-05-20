@@ -2,15 +2,20 @@
 
 #rm -f error.*
 
-tempfile=temp.$$
-errorfile=error.$$
-logfile=log.$$
+LOGDIR=${PWD}
+
+tempfile=${LOGDIR}/temp.$$
+errorfile=${LOGDIR}/error.$$
+logfile=${LOGDIR}/log.$$
 total=0
 ok=0
 ng=0
 fault=0
 
 export CCX_DEFAULT_SOLVER=SPOOLES
+#export CCX_DEFAULT_SOLVER=PARDISO
+#export CCX_DEFAULT_SOLVER=HETEROSOLVER
+#export CCX_DEFAULT_SOLVER=CGONVE
 export OMP_NUM_THREADS=1
 #CCX_EXE=~/CalculiX/bin/ccx_2.15_20200415
 DEFAULT_CCX_EXE=~/CalculiX/bin/ccx_2.16
@@ -34,7 +39,8 @@ else
     echo "ccx module: ${CCX_EXE} (SOLVER=default), THREADS=$OMP_NUM_THREADS" | tee -a $logfile
 fi
 
-for i in ../test/*.inp; do
+cd ../test
+for i in *.inp; do
 
 #        echo " "
 #        echo "example ${i%.inp}"
