@@ -3,10 +3,11 @@
 #rm -f error.*
 
 LOGDIR=${PWD}
+SUFFIX=`date +%Y%m%d-%H%M%S`
 
-tempfile=${LOGDIR}/temp.$$
-errorfile=${LOGDIR}/error.$$
-logfile=${LOGDIR}/log.$$
+tempfile=${LOGDIR}/temp.${SUFFIX}
+errorfile=${LOGDIR}/error.${SUFFIX}
+logfile=${LOGDIR}/log.${SUFFIX}
 total=0
 ok=0
 ng=0
