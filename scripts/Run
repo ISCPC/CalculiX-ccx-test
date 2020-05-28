@@ -2,12 +2,12 @@
 
 #rm -f error.*
 
-LOGDIR=${PWD}
+BASEDIR=${PWD}
 SUFFIX=`date +%Y%m%d-%H%M%S`
 
-tempfile=${LOGDIR}/temp.${SUFFIX}
-errorfile=${LOGDIR}/error.${SUFFIX}
-logfile=${LOGDIR}/log.${SUFFIX}
+tempfile=${BASEDIR}/temp.${SUFFIX}
+errorfile=${BASEDIR}/error.${SUFFIX}
+logfile=${BASEDIR}/log.${SUFFIX}
 total=0
 ok=0
 ng=0
@@ -29,11 +29,20 @@ echo "=== Env ==" | tee -a $logfile
 env | egrep '(CCX_|OMP_)' | tee -a $logfile
 echo "==========" | tee -a $logfile
 
+TESTLIST=${BASEDIR}/lists/default
 if [ $# -ge 1 ]; then
-    if [ -x $1 ]; then
-        CCX_EXE=$1
+    if [ -f ${BASEDIR}/lists/$1 ]; then
+        TESTLIST=${BASEDIR}/lists/$1
     else
-        echo "ERROR: $1 is not exacutable."
+        echo "WARNING: testlist '$1' not found. The default testset will be used."
+    fi
+fi
+
+if [ $# -ge 2 ]; then
+    if [ -x $2 ]; then
+        CCX_EXE=$2
+    else
+        echo "ERROR: $2 is not exacutable."
         exit 1
     fi
 else
@@ -43,13 +52,13 @@ fi
 echo "Start at `date`" | tee -a $logfile
 starttime=`date "+%s"`
 if [ "${CCX_DEFAULT_SOLVER}" != "" ]; then
-    echo "ccx module: ${CCX_EXE} (SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
+    echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
 else
-    echo "ccx module: ${CCX_EXE} (SOLVER=default), THREADS=$OMP_NUM_THREADS" | tee -a $logfile
+    echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=default, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
 fi
 
 cd ../test
-for i in *.inp; do
+for i in `cat ${TESTLIST}`; do
 
 #        echo " "
 #        echo "example ${i%.inp}"
