@@ -1,10 +1,10 @@
 **
-**   Structure: half open air column
-**   Test objective: modal dynamic calculation: 
-**                   pressure increase on open end
+**   Structure: cantilever beam.
+**   Test objective: *DISTRIBUTION card.
+**                   multiple distributions
 **
 *HEADING
-Model: air column
+Model: beam     Date: 10-Mar-1998
 *NODE
      1,      0.000000,      0.000000,      0.000000
      2,      1.000000,      0.000000,      0.000000
@@ -267,7 +267,6 @@ Model: air column
    259,      0.750000,      0.500000,      7.000000
    260,      0.500000,      0.750000,      7.000000
    261,      0.500000,      0.500000,      7.500000
-   262,      1.000000,      0.500000,      6.500000
 *ELEMENT, TYPE=C3D20R   , ELSET=B1
      1,     1,    10,    95,    19,    61,   105,   222,   192,     9,    93,
            94,    20,   104,   220,   221,   193,    62,   103,   219,   190
@@ -336,55 +335,49 @@ Model: air column
 *NSET, NSET=CN7
     97,    96,    95,    94,    93,    20,    19,    18,    17,    16,    15,
     14,    13,    12,    11,    10,     9,     4,     3,     2,     1
+*BOUNDARY
+CN7, 1
+*BOUNDARY
+CN7, 2
+*BOUNDARY
+CN7, 3
 *NSET,NSET=NALL,GENERATE
 1,261
-*ELSET,ELSET=Eall,GENERATE
+*ELSET,ELSET=EALL,GENERATE
 1,32
 *MATERIAL,NAME=EL
-*CONDUCTIVITY
-1.
-*SPECIFIC HEAT
-8.6505E-6
-*DENSITY
-1.
-*SOLID SECTION,ELSET=Eall,MATERIAL=EL
-*NSET,NSET=GIBO
-5, 
-6, 
-7, 
-8, 
-21, 
-22, 
-23, 
-24, 
-25, 
-26, 
-27, 
-28, 
-29, 
-30, 
-31, 
-32, 
-98, 
-99, 
-100, 
-101, 
-102,
-*BOUNDARY
-GIBO,11,11,0.
-*AMPLITUDE,NAME=A1
-0.,0.,1.E-4,1.,10.,1.
-*NSET,NSET=MID
-117
+*ELASTIC,TYPE=ORTHOTROPIC
+500000.,157200.,400000.,157200.,157200.,300000.,126200.,126200.,
+126200.,294.
+*DISTRIBUTION,NAME=DI1
+,1.,0.,0.,0.,1.,0.
+E1,0.,0.,1.,1.,0.,0.
+*DISTRIBUTION,NAME=DI2
+,1.,0.,0.,0.,1.,0.
+E2,0.,0.,1.,1.,0.,0.
+*ORIENTATION,NAME=OR1
+DI1
+*ORIENTATION,NAME=OR2
+DI2
+*SOLID SECTION,ELSET=E3,MATERIAL=EL,ORIENTATION=OR1
+*SOLID SECTION,ELSET=E4,MATERIAL=EL,ORIENTATION=OR2
+*NSET,NSET=LAST
+5,6,7,8,22,25,28,31,100
+*ELSET,ELSET=E1,GENERATE
+1,4
+*ELSET,ELSET=E2,GENERATE
+29,32
+*ELSET,ELSET=E3,GENERATE
+1,16
+*ELSET,ELSET=E4,GENERATE
+17,32
 *STEP
-*HEAT TRANSFER,FREQUENCY,STORAGE=YES
-10
+*STATIC
+*CLOAD
+LAST,2,1.
+*NODE PRINT,NSET=NALL
+U
+*EL PRINT,ELSET=EALL,GLOBAL=YES
+S,COORD
 *END STEP
-*STEP
-*HEAT TRANSFER,MODAL DYNAMIC
-1.E-3,1.E-1
-*BOUNDARY,AMPLITUDE=A1
-GIBO,11,11,1.
-*NODE PRINT,NSET=MID
-NT
-*END STEP
+
