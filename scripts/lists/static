@@ -59,6 +59,8 @@ beampl.inp
 beampo1.inp
 beampo2.inp
 beampo3.inp
+beampo4.inp
+beampo5.inp
 beamprand.inp
 beamprb.inp
 beampset.inp
@@ -84,8 +86,8 @@ c3d6.inp
 changefric.inp
 changesolidsection.inp
 changesurfbeh.inp
-circ10pfin.inp
 circ10p.inp
+circ10pcent.inp
 concretebeam.inp
 contact10.inp
 contact11.inp
@@ -93,6 +95,7 @@ contact1.inp
 contact2.inp
 contact3.inp
 contact4.inp
+contact4_mortar.inp
 contact5.inp
 contact6.inp
 contactenergy.inp
@@ -106,6 +109,10 @@ coupling7.inp
 cubef2f1.inp
 cubef2f2.inp
 cubef2f3.inp
+cubes.inp
+cubeslinmortar.inp
+cubesmortar.inp
+cubespglinmortar.inp
 cubespring.inp
 cyl.inp
 disk2.inp
@@ -120,8 +127,13 @@ gap2.inp
 gap.inp
 hinge.inp
 hueeber1.inp
+hueeber1_mortar.inp
 hueeber2.inp
+hueeber2_mortar.inp
 hueeber3.inp
+hueeber3_mortar.inp
+hueeber4.inp
+hueeber4_mortar.inp
 inistrain2.inp
 inistrain.inp
 largerot1.inp
@@ -177,6 +189,8 @@ segment1.inp
 segment2.inp
 segmentf.inp
 segmentm.inp
+segmentsmooth.inp
+segmentunsmooth.inp
 shell1.inp
 shell1lin.inp
 shell2.inp
@@ -206,6 +220,7 @@ submodelbeamp.inp
 submodeltwobeam.inp
 submodeltwobeamnlgeom.inp
 swing.inp
+testmortar.inp
 truss2.inp
 truss.inp
 userbeam.inp

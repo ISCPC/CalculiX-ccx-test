@@ -6,7 +6,6 @@ achtelc.inp
 achteld.inp
 achtelg.inp
 achtelp.inp
-acou1.inp
 acou2.inp
 acou3.inp
 acou4.inp
@@ -132,6 +131,8 @@ beampl.inp
 beampo1.inp
 beampo2.inp
 beampo3.inp
+beampo4.inp
+beampo5.inp
 beamprand.inp
 beamprb.inp
 beampset.inp
@@ -199,7 +200,7 @@ channel7.inp
 channel9.inp
 chanson1.inp
 characteristic.inp
-circ10pfin.inp
+circ10pcent.inp
 circ10p.inp
 concretebeam.inp
 contact10.inp
@@ -209,6 +210,7 @@ contact1.inp
 contact2.inp
 contact3.inp
 contact4.inp
+contact4_mortar.inp
 contact5.inp
 contact6.inp
 contact7.inp
@@ -239,6 +241,10 @@ cubef2f1.inp
 cubef2f2.inp
 cubef2f3.inp
 cubenewt.inp
+cubes.inp
+cubeslinmortar.inp
+cubesmortar.inp
+cubespglinmortar.inp
 cubespring.inp
 cyl.inp
 dam.inp
@@ -302,9 +308,13 @@ greencyc1.inp
 greencyc2.inp
 hinge.inp
 hueeber1.inp
+hueeber1_mortar.inp
 hueeber2.inp
+hueeber2_mortar.inp
 hueeber3.inp
+hueeber3_mortar.inp
 hueeber4.inp
+hueeber4_mortar.inp
 impdyn.inp
 induction2.inp
 induction3.inp
@@ -341,6 +351,8 @@ networkmpc2.inp
 networkmpc.inp
 oneel20cf.inp
 oneel20df.inp
+oneel20fi2.inp
+oneel20fi3.inp
 oneel20fi.inp
 oneel20rs.inp
 oneel8ra.inp
@@ -424,8 +436,11 @@ segmentbeam.inp
 segmentface.inp
 segmentf.inp
 segment.inp
+segmentmass.inp
 segmentm.inp
+segmentsmooth.inp
 segmenttet.inp
+segmentunsmooth.inp
 segststate.inp
 sens2d.inp
 sens3d.inp
@@ -479,6 +494,7 @@ submodeltwobeamnlgeom.inp
 substructure.inp
 swing.inp
 tempdiscon.inp
+testmortar.inp
 thermomech2.inp
 thermomech.inp
 thread.inp
