@@ -80,7 +80,6 @@ beamhtbf.inp
 beamhtbo.inp
 beamhtcr2.inp
 beamhtcr.inp
-beamhtfc2.inp
 beamhtfcaero.inp
 beamhtfcaerothne.inp
 beamhtfc.inp
@@ -97,12 +96,8 @@ beammr.inp
 beammrlin.inp
 beamnh.inp
 beamnld.inp
-beamnldye20.inp
-beamnldye.inp
-beamnldyems.inp
 beamnldy.inp
 beamnldynodirect.inp
-beamnldype.inp
 beamnldyp.inp
 beamnlmpc.inp
 beamnlp.inp
@@ -205,7 +200,6 @@ circ10p.inp
 concretebeam.inp
 contact10.inp
 contact11.inp
-contact12.inp
 contact1.inp
 contact2.inp
 contact3.inp
@@ -220,15 +214,8 @@ contactenergy.inp
 contdamp1.inp
 contdamp2.inp
 cou2d.inp
-coucss.inp
-couctr.inp
 couette1.inp
 couette2.inp
-couettecyl4.inp
-couettecylcent.inp
-couettecylcomp.inp
-couettecyl.inp
-cou.inp
 coupling1.inp
 coupling2.inp
 coupling3.inp
@@ -257,9 +244,9 @@ disk2.inp
 distcoup2.inp
 distcoup.inp
 dist.inp
-dloadlin20f.inp*
-dloadlinIf.inp*
-dloadlinI.inp*
+dloadlin20f.inp
+dloadlinIf.inp
+dloadlinI.inp
 dyncubeexp.inp
 dyncube.inp
 edgeload.inp
@@ -267,7 +254,6 @@ equrem1.inp
 equrem2.inp
 equrem3.inp
 equrem4.inp
-fluidwrite.inp
 fricloop.inp
 friction1.inp
 friction2.inp
@@ -375,11 +361,7 @@ planestress3dsens.inp
 planestress3.inp
 planestress4.inp
 planestress.inp
-planestressquadsens.inp
-planestresssens.inp
 plate.inp
-poi2d2.inp
-poi2d.inp
 potied.inp
 pret1.inp
 pret2.inp
@@ -442,7 +424,6 @@ segmentsmooth.inp
 segmenttet.inp
 segmentunsmooth.inp
 segststate.inp
-sens2d.inp
 sens3d.inp
 sens_disp_orien.inp
 sens_disp_orien_nlgeom.inp
@@ -467,8 +448,6 @@ shellbeam.inp
 shellf2.inp
 shellf.inp
 shellnor.inp
-shellquadsens.inp
-shellsens.inp
 simplebeam.inp
 simplebeampipe1.inp
 simplebeampipe2.inp

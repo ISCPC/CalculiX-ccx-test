@@ -19,7 +19,7 @@ fault=0
 #export CCX_DEFAULT_SOLVER=CGONVE
 export OMP_NUM_THREADS=1
 #CCX_EXE=~/CalculiX/bin/ccx_2.15_20200415
-DEFAULT_CCX_EXE=~/CalculiX/bin/ccx_2.16
+DEFAULT_CCX_EXE=~/local/bin/ccx_2.18
 
 #export CCX_NPROC_INTERPOLATE=4
 #export CCX_INTERPOLATE_MODE=2
