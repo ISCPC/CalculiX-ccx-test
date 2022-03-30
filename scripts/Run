@@ -1,5 +1,18 @@
 #!/bin/bash
 
+function show_environment () {
+    # Show environment variable
+    echo "=== Env ==" | tee -a $logfile
+    env | egrep '(CCX_|OMP_)' | tee -a $logfile
+    echo "==========" | tee -a $logfile
+
+    if [ "${CCX_DEFAULT_SOLVER}" != "" ]; then
+        echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
+    else
+        echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=default, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
+    fi
+}
+
 #rm -f error.*
 
 BASEDIR=${PWD}
@@ -13,21 +26,28 @@ ok=0
 ng=0
 fault=0
 
-#export CCX_DEFAULT_SOLVER=SPOOLES
+# For Release version
+DISTROOT=${HOME}/local
+
+export VESOLVER_PATH=${DISTROOT}/ve/lib/libvesolver.so
+
+export LD_LIBRARY_PATH=/opt/intel/lib/intel64:/opt/intel/mkl/lib/intel64:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=${DISTROOT}/lib:${LD_LIBRARY_PATH}
+export VE_LD_LIBRARY_PATH=${DISTROOT}/ve/lib:${VE_LD_LIBRARY_PATH}
+
+export CCX_DEFAULT_SOLVER=SPOOLES
 #export CCX_DEFAULT_SOLVER=PARDISO
-#export CCX_DEFAULT_SOLVER=HETEROSOLVER
-#export CCX_DEFAULT_SOLVER=CGONVE
-export OMP_NUM_THREADS=1
-#CCX_EXE=~/CalculiX/bin/ccx_2.15_20200415
-DEFAULT_CCX_EXE=~/local/bin/ccx_2.18
+#export CCX_DEFAULT_SOLVER=SX-AUR_HS
+#export CCX_DEFAULT_SOLVER=SX-AUR_SCALING
+#export CCX_DEFAULT_SOLVER=ITERATIVESCALING
+
+#export OMP_NUM_THREADS=1
+unset OMP_NUM_THREADS
+
+DEFAULT_CCX_EXE=~/local/bin/ccx_2.18_MT
 
 #export CCX_NPROC_INTERPOLATE=4
-#export CCX_INTERPOLATE_MODE=2
-
-# Show environment variable
-echo "=== Env ==" | tee -a $logfile
-env | egrep '(CCX_|OMP_)' | tee -a $logfile
-echo "==========" | tee -a $logfile
+export CCX_INTERPOLATE_MODE=2
 
 TESTLIST=${BASEDIR}/lists/default
 if [ $# -ge 1 ]; then
@@ -49,13 +69,10 @@ else
     CCX_EXE=${DEFAULT_CCX_EXE}
 fi
 
+show_environment
+
 echo "Start at `date`" | tee -a $logfile
 starttime=`date "+%s"`
-if [ "${CCX_DEFAULT_SOLVER}" != "" ]; then
-    echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=${CCX_DEFAULT_SOLVER}, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
-else
-    echo "ccx module: ${CCX_EXE} (TESTLIST=${TESTLIST##*/}, SOLVER=default, THREADS=$OMP_NUM_THREADS)" | tee -a $logfile
-fi
 
 cd ../test
 for i in `cat ${TESTLIST}`; do
@@ -182,6 +199,12 @@ done
 
 rm -f spooles.out *.nam *.mtx fort.* dummy finemesh.*
 #rm -f $tempfile
+
+#
+# Show environment and results
+#
+show_environment
+
 echo "TOTAL/OK/NG/FAULT: $total / $ok / $ng / $fault" | tee -a $logfile
 echo "check the existence of file $errorfile"
 echo "if this file does not exist, the present results"

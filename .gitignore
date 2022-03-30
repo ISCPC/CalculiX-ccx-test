@@ -12,6 +12,8 @@ test/*.rout
 test/*.fin
 test/*.fcv
 test/*.vwf
+test/*.fbd
+test/*.out
 scripts/error.*
 scripts/temp.*
 scripts/log.*

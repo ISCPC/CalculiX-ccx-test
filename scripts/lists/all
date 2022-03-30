@@ -211,9 +211,7 @@ channelcbs.inp
 chanson1.inp
 characteristic.inp
 circ10pcent.inp
-circ10pcent.rfn.inp
 circ10p.inp
-circ10p.rfn.inp
 concretebeam.inp
 contact10.inp
 contact11.inp
@@ -459,9 +457,7 @@ segment.inp
 segmentmass.inp
 segmentm.inp
 segmentsmooth2.inp
-segmentsmooth2.rfn.inp
 segmentsmooth.inp
-segmentsmooth.rfn.inp
 segmenttet.inp
 segmentunsmooth.inp
 segststate.inp
