@@ -126,8 +126,6 @@ contactenergy.inp
 coupling1.inp
 coupling2.inp
 coupling3.inp
-coupling4.inp
-coupling5.inp
 coupling6.inp
 coupling7.inp
 cubef2f1.inp
@@ -230,7 +228,6 @@ segmentm.inp
 segmentsmooth2.inp
 segmentsmooth.inp
 segmentunsmooth.inp
-sens2d.inp
 sens3d.inp
 sens_disp_orien.inp
 sens_disp_orien_nlgeom.inp
@@ -252,8 +249,6 @@ shell7rot2.inp
 shell7rot.inp
 shellbeam.inp
 shellnor.inp
-shellquadsens.inp
-shellsens.inp
 simplebeam.inp
 simplebeampipe1.inp
 simplebeampipe2.inp
