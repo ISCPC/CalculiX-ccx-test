@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT    10
+
+
  temperatures for set NALL and time  0.7588672E-01
 
          1  2.000000E+01
@@ -522,6 +528,9 @@
         32   7 -1.278977E-11 -4.973799E-12 -2.272196E+03
         32   8  4.973799E-12  5.861978E-12 -2.272196E+03
 
+                                INCREMENT    20
+
+
  temperatures for set NALL and time  0.4432676E+01
 
          1  2.000000E+01
@@ -1044,6 +1053,9 @@
         32   6  3.197442E-12  2.309264E-12 -5.028963E+02
         32   7  1.421085E-12 -7.105427E-13 -5.028963E+02
         32   8 -3.552714E-12  1.065814E-12 -5.028963E+02
+
+                                INCREMENT    23
+
 
  temperatures for set NALL and time  0.1000000E+02
 

@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set E1 and time  0.1000000E+01
 
         29   1  4.350424E+00  4.350424E+00  2.186649E+00  3.056971E+00  4.494639E+00  4.494639E+00
@@ -10,7 +16,19 @@
         29   7  1.258418E-01  3.065079E-01  2.659010E+00  2.936660E-01  2.471050E-01 -4.395679E-01
         29   8 -3.664656E-01 -3.664656E-01 -6.615586E-01 -3.572523E-03  4.812778E-02  4.812778E-02
 
+                        S T E P       2
+
+
+                                INCREMENT     1
+
+
  stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set E1 and time  0.2000000E+01
+
+
+                        S T E P       3
+
+
+                                INCREMENT     1
 
 
  stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set E1 and time  0.3000000E+01

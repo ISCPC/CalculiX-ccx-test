@@ -1,5 +1,5 @@
 **
-**   Structure: half open air column
+**   Structure: half open air column (ideal gas)
 **   Test objective: modal dynamic calculation: 
 **                   pressure increase on open end
 **                   air is modeled as linear elastic 
@@ -689,6 +689,8 @@ Nall,273.
 *STEP
 *FREQUENCY,STORAGE=YES
 30
+*TEMPERATURE
+Nall,273.
 *END STEP
 *STEP,INC=300
 *MODAL DYNAMIC

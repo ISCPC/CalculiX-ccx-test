@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
  MODE NO    EIGENVALUE                       FREQUENCY   
@@ -54,9 +57,18 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
           0.9100000E-07   0.9100000E-07   0.9100000E-07   0.2065050E-05   0.2027133E-05   0.9858333E-07
 
 
+                        S T E P       2
+
+
+                                INCREMENT    14
+
+
  displacements (vx,vy,vz) for set N1 and time  0.5000000E-04
 
        100 -2.789811E-14 -6.324747E-02  1.237649E-17
+
+                                INCREMENT    16
+
 
  displacements (vx,vy,vz) for set N1 and time  0.1000000E-03
 

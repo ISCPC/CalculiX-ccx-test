@@ -1,6 +1,6 @@
 **
 **   Structure: cantilever beam.
-**   Test objective: shear forces.
+**   Test objective: one element as substructure
 **
 *HEADING
 Model: beam     Date: 10-Mar-1998

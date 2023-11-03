@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT    30
+
+
  temperatures for set NALL and time  0.3404205E+01
 
          1  6.537658E+02
@@ -1795,6 +1801,9 @@
         48  25  1.951496E-02 -9.330274E+03 -3.290524E+01
         48  26 -1.036124E-04 -9.330273E+03 -3.291413E+01
         48  27 -1.972218E-02 -9.330273E+03 -3.290514E+01
+
+                                INCREMENT    33
+
 
  temperatures for set NALL and time  0.1000000E+02
 

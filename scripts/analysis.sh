@@ -1,4 +1,4 @@
-for inp in `cat lists/all`
+for inp in `cat lists/default`
 do
     echo -n "$inp"
     grep -i '^*STATIC' ../test/$inp > /dev/null

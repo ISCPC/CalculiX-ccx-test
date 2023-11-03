@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set EALL and time  0.1000000E+01
 
          1   1  2.953219E+02 -5.061032E+00 -2.871711E-04  3.106010E+00  3.765450E-02 -2.329595E-02

@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  temperatures for set NGAS and time  0.1000000E+00
 
        603  3.000000E+02
@@ -7,6 +13,9 @@
        606  2.999999E+02
        607  3.000009E+02
        608  2.999996E+02
+
+                                INCREMENT     2
+
 
  temperatures for set NGAS and time  0.2000000E+00
 
@@ -17,6 +26,9 @@
        607  3.000010E+02
        608  2.999986E+02
 
+                                INCREMENT     3
+
+
  temperatures for set NGAS and time  0.3500000E+00
 
        603  3.000000E+02
@@ -25,6 +37,9 @@
        606  2.999984E+02
        607  3.000007E+02
        608  2.999971E+02
+
+                                INCREMENT     4
+
 
  temperatures for set NGAS and time  0.5750000E+00
 
@@ -35,6 +50,9 @@
        607  3.000018E+02
        608  2.999968E+02
 
+                                INCREMENT     5
+
+
  temperatures for set NGAS and time  0.9125000E+00
 
        603  3.000000E+02
@@ -43,6 +61,9 @@
        606  3.000058E+02
        607  3.000133E+02
        608  3.000053E+02
+
+                                INCREMENT     6
+
 
  temperatures for set NGAS and time  0.1000000E+01
 
@@ -53,6 +74,12 @@
        607  3.000183E+02
        608  3.000092E+02
 
+                        S T E P       2
+
+
+                                INCREMENT     1
+
+
  temperatures for set NGAS and time  0.1100000E+02
 
        603  3.000000E+02
@@ -61,6 +88,9 @@
        606  3.018936E+02
        607  3.021718E+02
        608  3.023844E+02
+
+                                INCREMENT     2
+
 
  temperatures for set NGAS and time  0.2100000E+02
 
@@ -71,6 +101,9 @@
        607  3.044768E+02
        608  3.049114E+02
 
+                                INCREMENT     3
+
+
  temperatures for set NGAS and time  0.3600000E+02
 
        603  3.000000E+02
@@ -79,6 +112,9 @@
        606  3.069188E+02
        607  3.079503E+02
        608  3.087022E+02
+
+                                INCREMENT     4
+
 
  temperatures for set NGAS and time  0.5850000E+02
 
@@ -89,6 +125,9 @@
        607  3.131672E+02
        608  3.143742E+02
 
+                                INCREMENT     5
+
+
  temperatures for set NGAS and time  0.9225000E+02
 
        603  3.000000E+02
@@ -97,6 +136,9 @@
        606  3.181851E+02
        607  3.210014E+02
        608  3.228746E+02
+
+                                INCREMENT     6
+
 
  temperatures for set NGAS and time  0.1010000E+03
 
@@ -107,6 +149,12 @@
        607  3.230340E+02
        608  3.250792E+02
 
+                        S T E P       3
+
+
+                                INCREMENT     1
+
+
  temperatures for set NGAS and time  0.1110000E+03
 
        603  3.000000E+02
@@ -115,6 +163,9 @@
        606  3.219387E+02
        607  3.253589E+02
        608  3.276005E+02
+
+                                INCREMENT     2
+
 
  temperatures for set NGAS and time  0.1210000E+03
 
@@ -125,6 +176,9 @@
        607  3.276859E+02
        608  3.301239E+02
 
+                                INCREMENT     3
+
+
  temperatures for set NGAS and time  0.1360000E+03
 
        603  3.000000E+02
@@ -133,6 +187,9 @@
        606  3.269489E+02
        607  3.311806E+02
        608  3.339149E+02
+
+                                INCREMENT     4
+
 
  temperatures for set NGAS and time  0.1585000E+03
 
@@ -143,6 +200,9 @@
        607  3.364333E+02
        608  3.396194E+02
 
+                                INCREMENT     5
+
+
  temperatures for set NGAS and time  0.1922500E+03
 
        603  3.000000E+02
@@ -151,6 +211,9 @@
        606  3.382719E+02
        607  3.443459E+02
        608  3.482345E+02
+
+                                INCREMENT     6
+
 
  temperatures for set NGAS and time  0.2010000E+03
 

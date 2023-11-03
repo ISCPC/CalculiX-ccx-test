@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -510,6 +513,12 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
     6          9          B
     6         10          B
 
+                        S T E P       2
+
+
+                                INCREMENT     1
+
+
  displacements (vx,vy,vz) for set NDUMMY and time  0.1000000E-05
 
          1  3.569640E-07 -7.555850E-06 -6.297150E-05
@@ -563,6 +572,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        335 -5.311741E-07 -7.119805E-06 -6.747109E-05
        336 -5.894239E-07 -4.723150E-06 -6.972782E-05
        337 -5.611027E-07 -6.438475E-06 -6.889136E-05
+
+                                INCREMENT     2
+
 
  displacements (vx,vy,vz) for set NDUMMY and time  0.2000000E-05
 
@@ -618,6 +630,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        336 -1.287067E-06 -6.420832E-05 -5.883295E-05
        337 -1.270634E-06 -6.897297E-05 -5.776511E-05
 
+                                INCREMENT     3
+
+
  displacements (vx,vy,vz) for set NDUMMY and time  0.3000000E-05
 
          1  1.278235E-06 -9.069350E-05  5.821045E-06
@@ -671,6 +686,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        335 -1.628716E-06 -1.008050E-04 -1.388755E-05
        336 -1.669459E-06 -9.781076E-05 -1.926957E-05
        337 -1.625891E-06 -9.975191E-05 -1.416477E-05
+
+                                INCREMENT     4
+
 
  displacements (vx,vy,vz) for set NDUMMY and time  0.4000000E-05
 
@@ -726,6 +744,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        336 -1.303464E-06 -2.502720E-05 -1.013455E-04
        337 -1.335505E-06 -2.466101E-05 -9.544637E-05
 
+                                INCREMENT     5
+
+
  displacements (vx,vy,vz) for set NDUMMY and time  0.5000000E-05
 
          1  6.001880E-07 -1.520283E-05 -3.064684E-05
@@ -779,6 +800,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        335 -6.361036E-07 -2.283906E-05 -4.066520E-05
        336 -7.403417E-07 -2.056859E-05 -4.277369E-05
        337 -8.490667E-07 -2.242429E-05 -4.104182E-05
+
+                                INCREMENT     6
+
 
  displacements (vx,vy,vz) for set NDUMMY and time  0.6000000E-05
 
@@ -834,6 +858,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        336 -8.785659E-07 -4.959973E-05 -2.713585E-06
        337 -9.888710E-07 -5.610946E-05 -4.770030E-06
 
+                                INCREMENT     7
+
+
  displacements (vx,vy,vz) for set NDUMMY and time  0.7000000E-05
 
          1  1.300857E-06 -4.360839E-05 -7.759077E-05
@@ -887,6 +914,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        335 -1.210677E-06 -3.238158E-05 -8.553068E-05
        336 -1.134281E-06 -2.245773E-05 -9.134608E-05
        337 -1.252270E-06 -3.001335E-05 -9.314379E-05
+
+                                INCREMENT     8
+
 
  displacements (vx,vy,vz) for set NDUMMY and time  0.8000000E-05
 
@@ -942,6 +972,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        336 -1.471144E-06 -5.393202E-05 -4.332052E-05
        337 -1.447820E-06 -5.420326E-05 -3.737348E-05
 
+                                INCREMENT     9
+
+
  displacements (vx,vy,vz) for set NDUMMY and time  0.9000000E-05
 
          1  1.105828E-06 -4.893271E-05 -1.838019E-05
@@ -995,6 +1028,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
        335 -1.308644E-06 -6.248578E-05 -3.726618E-05
        336 -1.365911E-06 -6.108878E-05 -4.130316E-05
        337 -1.397610E-06 -6.185995E-05 -3.620759E-05
+
+                                INCREMENT    10
+
 
  displacements (vx,vy,vz) for set NDUMMY and time  0.1000000E-04
 

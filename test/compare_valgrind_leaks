@@ -22,9 +22,8 @@ for i in *.inp; do
 #       executing CalculiX and generating the .dat file
 #
 
-#        ~/CalculiX/CalculiX  ${i%.inp} >> $tempfile 2>&1
 	echo "${i%.inp}" >> valgrind.out
-        valgrind --leak-check=full --show-reachable=yes ~/CalculiX/CalculiX  ${i%.inp} >> valgrind.out 2>&1
+        valgrind --leak-check=full --show-reachable=yes ~/CalculiX/src/CalculiX  ${i%.inp} >> valgrind.out 2>&1
 
 #
 #       check whether the .dat and .dat.ref files exist

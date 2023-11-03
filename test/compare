@@ -48,7 +48,23 @@ for i in *.inp; do
 #       the .frd file
 #
 
-        ~/CalculiX/CalculiX  ${i%.inp} >> $tempfile 2>&1
+        ~/CalculiX/src/CalculiX  ${i%.inp} >> $tempfile 2>&1
+
+#
+#       moving the .mtx file to the .dat file in order to compare
+#
+	
+	if [ $i = substructure.inp ]
+	then
+	    rm -f substructure.dat
+	    mv substructure.mtx substructure.dat
+	fi
+	
+	if [ $i = substructure2.inp ]
+	then
+	    rm -f substructure2.dat
+	    mv substructure2.mtx substructure2.dat
+	fi
 
 #
 #       check whether the .dat and .dat.ref files exist

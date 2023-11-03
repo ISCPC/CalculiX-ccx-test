@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
  MODE NO    EIGENVALUE                       FREQUENCY   
@@ -15,6 +18,9 @@
       8   0.1162561E+07   0.1078221E+04   0.1716043E+03   0.0000000E+00
       9   0.1163005E+07   0.1078427E+04   0.1716370E+03   0.0000000E+00
      10   0.1169883E+07   0.1081611E+04   0.1721438E+03   0.0000000E+00
+
+                        S T E P       2
+
 
 P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.5000000000000E+01 (CYCLES/TIME)
 

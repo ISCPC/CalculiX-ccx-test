@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  displacements (vx,vy,vz) for set NS_ALL and time  0.1000000E+01
 
         10  1.496520E-11  4.492535E-13 -8.470329E-22
@@ -6,6 +12,12 @@
         30 -1.383826E-03  2.878067E-02 -3.304954E-05
          4 -4.725069E-03  6.492439E-02 -7.746361E-05
          5 -1.130234E-02  1.156122E-01 -1.442734E-04
+
+                        S T E P       2
+
+
+                                INCREMENT     1
+
 
  displacements (vx,vy,vz) for set NS_ALL and time  0.2000000E+01
 

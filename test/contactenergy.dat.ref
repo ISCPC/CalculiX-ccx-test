@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  displacements (vx,vy,vz) for set NALL and time  0.1000000E+01
 
          1  0.000000E+00  0.000000E+00  0.000000E+00
@@ -46,7 +52,7 @@
 
         2.285724E-04
 
- contact print energy (slave element+face,energy)for all contact elements and time 0.1000000E+01
+ contact spring energy (slave element+face,energy) for all contact elements and time 0.1000000E+01
 
          2          3  1.125006E-06
          2          3  6.296991E-07

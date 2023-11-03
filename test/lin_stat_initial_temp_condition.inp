@@ -1321,6 +1321,8 @@ Set-1, 650., 0.
 *Step, name=Step-1, nlgeom=NO
 *Static
 1., 1., 1e-05, 1.
+*TEMPERATURE
+Set-1, 650., 0.
 ** 
 ** BOUNDARY CONDITIONS
 ** 

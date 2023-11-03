@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
  MODE NO    EIGENVALUE                       FREQUENCY   
@@ -54,41 +57,74 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
           0.9100000E-07   0.9100000E-07   0.9100000E-07   0.2065050E-05   0.2027133E-05   0.9858333E-07
 
 
+                        S T E P       2
+
+
+                                INCREMENT     1
+
+
  displacements (vx,vy,vz) for set N1 and time  0.1000000E-04
 
        100 -2.138944E-16 -7.061991E-04  1.290479E-19
+
+                                INCREMENT     2
+
 
  displacements (vx,vy,vz) for set N1 and time  0.2000000E-04
 
        100 -9.334241E-16 -2.871506E-03  5.343262E-19
 
+                                INCREMENT     3
+
+
  displacements (vx,vy,vz) for set N1 and time  0.3000000E-04
 
        100 -2.138105E-15 -6.426281E-03  1.202805E-18
+
+                                INCREMENT     4
+
 
  displacements (vx,vy,vz) for set N1 and time  0.4000000E-04
 
        100 -3.804160E-15 -1.130265E-02  2.121618E-18
 
+                                INCREMENT     5
+
+
  displacements (vx,vy,vz) for set N1 and time  0.5000000E-04
 
        100 -6.122869E-15 -1.814225E-02  3.407572E-18
+
+                                INCREMENT     6
+
 
  displacements (vx,vy,vz) for set N1 and time  0.6000000E-04
 
        100 -7.867207E-15 -2.269320E-02  4.292876E-18
 
+                                INCREMENT     7
+
+
  displacements (vx,vy,vz) for set N1 and time  0.7000000E-04
 
        100 -8.772157E-15 -2.555977E-02  4.820059E-18
+
+                                INCREMENT     8
+
 
  displacements (vx,vy,vz) for set N1 and time  0.8000000E-04
 
        100 -1.141767E-14 -3.350575E-02  6.307980E-18
 
+                                INCREMENT     9
+
+
  displacements (vx,vy,vz) for set N1 and time  0.9000000E-04
 
        100 -1.457857E-14 -4.241283E-02  8.003945E-18
+
+                                INCREMENT    10
+
 
  displacements (vx,vy,vz) for set N1 and time  0.1000000E-03
 

@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
  MODE NO    EIGENVALUE                       FREQUENCY   
@@ -114,49 +117,88 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
           0.6400000E+01   0.6400000E+01   0.7800000E+01   0.1391333E+03   0.1391333E+03   0.4266667E+01
 
 
+                        S T E P       2
+
+
+                                INCREMENT    25
+
+
  displacements (vx,vy,vz) for set MID and time  0.2500000E-01
 
        117 -7.101674E-20  0.000000E+00  3.632034E-05
+
+                                INCREMENT    50
+
 
  displacements (vx,vy,vz) for set MID and time  0.5000000E-01
 
        117 -1.076432E-19  0.000000E+00  1.021197E-04
 
+                                INCREMENT    75
+
+
  displacements (vx,vy,vz) for set MID and time  0.7500000E-01
 
        117 -2.094447E-19  0.000000E+00  9.152791E-05
+
+                                INCREMENT   100
+
 
  displacements (vx,vy,vz) for set MID and time  0.1000000E+00
 
        117 -2.804972E-20  0.000000E+00  2.918449E-06
 
+                                INCREMENT   125
+
+
  displacements (vx,vy,vz) for set MID and time  0.1250000E+00
 
        117 -4.463097E-20  0.000000E+00 -7.662438E-07
+
+                                INCREMENT   150
+
 
  displacements (vx,vy,vz) for set MID and time  0.1500000E+00
 
        117 -1.371516E-19  0.000000E+00  7.406104E-05
 
+                                INCREMENT   175
+
+
  displacements (vx,vy,vz) for set MID and time  0.1750000E+00
 
        117 -4.688097E-20  0.000000E+00  1.020579E-04
+
+                                INCREMENT   200
+
 
  displacements (vx,vy,vz) for set MID and time  0.2000000E+00
 
        117 -5.081346E-20  0.000000E+00  5.245016E-05
 
+                                INCREMENT   225
+
+
  displacements (vx,vy,vz) for set MID and time  0.2250000E+00
 
        117  4.991940E-20  0.000000E+00  2.069209E-07
+
+                                INCREMENT   250
+
 
  displacements (vx,vy,vz) for set MID and time  0.2500000E+00
 
        117  8.153627E-22  0.000000E+00  2.320804E-05
 
+                                INCREMENT   275
+
+
  displacements (vx,vy,vz) for set MID and time  0.2750000E+00
 
        117 -6.068260E-20  0.000000E+00  1.022066E-04
+
+                                INCREMENT   300
+
 
  displacements (vx,vy,vz) for set MID and time  0.3000000E+00
 

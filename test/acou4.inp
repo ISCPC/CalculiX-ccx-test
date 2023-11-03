@@ -1,5 +1,5 @@
 **
-**   Structure: half open air column
+**   Structure: half open air column (ideal gas)
 **   Test objective: implicit dynamic calculation: 
 **                   pressure increase on open end
 **                   air is modeled as linear elastic 
@@ -687,6 +687,8 @@ Nall,273.
 *STEP,INC=300
 *DYNAMIC,DIRECT
 1.E-3,3.E-2
+*TEMPERATURE
+Nall,273.
 *DLOAD,AMPLITUDE=A1
 29, P2, -1.000000 
 30, P2, -1.000000 
@@ -694,4 +696,6 @@ Nall,273.
 31, P2, -1.000000 
 *NODE PRINT,NSET=MID,FREQUENCY=2
 U
+*EL FILE,NSET=MID
+ENER
 *END STEP

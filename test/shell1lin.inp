@@ -76,6 +76,8 @@ Nsete,0.02
 21,0.025
 *STEP
 *STATIC
+*TEMPERATURE
+Nall,273.
 *DLOAD
 3,P,-.1
 4,P,-.1

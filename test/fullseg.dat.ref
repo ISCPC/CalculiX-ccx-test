@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -72,6 +75,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
     0          9          B
     0         10          F
 
+                        S T E P       2
+
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -144,6 +150,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
     1          8          B
     1          9          B
     1         10          B
+
+                        S T E P       3
+
 
      E I G E N V A L U E   O U T P U T
 

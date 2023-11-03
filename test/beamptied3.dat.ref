@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
  MODE NO    EIGENVALUE                       FREQUENCY   
@@ -52,6 +55,9 @@ TOTAL     0.5133021E-07   0.5133021E-07   0.5694471E-36   0.1000810E-05   0.1000
 MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROTATION      Z-ROTATION
 
           0.5893333E-07   0.5893333E-07   0.5893333E-07   0.1239911E-05   0.1239911E-05   0.3928889E-07
+
+
+                        S T E P       3
 
 
      E I G E N V A L U E   O U T P U T

@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  displacements (vx,vy,vz) for set NALL and time  0.1000000E+01
 
          1  0.000000E+00  0.000000E+00  0.000000E+00
@@ -14,6 +20,12 @@
         11  6.645556E-08  0.000000E+00  0.000000E+00
         12  6.645556E-08  1.099984E-01  0.000000E+00
         13  6.645556E-08  0.000000E+00  0.000000E+00
+
+                        S T E P       2
+
+
+                                INCREMENT     1
+
 
  displacements (vx,vy,vz) for set NALL and time  0.2000000E+01
 

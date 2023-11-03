@@ -1,4 +1,10 @@
 
+                        S T E P       1
+
+
+                                INCREMENT     1
+
+
  total volume for set EDISK and time  0.1000000E+01
 
         1.943765E+01
@@ -18,6 +24,9 @@
  total mass moment of inertia about the center ofgravity (xx,yy,zz,xy,xz,yz) for set EDISK and time  0.1000000E+01
 
         9.569826E-07  9.569826E-07  7.896544E-10 -6.617445E-24  8.218815E-23  2.243417E-21
+
+                        S T E P       2
+
 
      E I G E N V A L U E   O U T P U T
 
@@ -72,6 +81,9 @@ TOTAL     0.1660831E-05   0.1660831E-05   0.7954619E-27   0.5121295E-02   0.5130
 MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROTATION      Z-ROTATION
 
           0.1915618E-05   0.1915618E-05   0.1915618E-05   0.6179909E-02   0.6179909E-02   0.3019560E-05
+
+
+                        S T E P       3
 
 
      E I G E N V A L U E   O U T P U T

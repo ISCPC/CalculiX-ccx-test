@@ -1,11 +1,11 @@
     1C
     1UUSER                                                              
-    1UDATE              17.december.2021                                
-    1UTIME              13:29:40                                        
+    1UDATE              29.july.2023                                    
+    1UTIME              11:08:59                                        
     1UHOST                                                              
     1UPGM               CalculiX                                        
-    1UVERSION           Version 2.19                             
-    1UCOMPILETIME       Fri Dec 17 13:12:10 CET 2021                    
+    1UVERSION           Version 2.21                             
+    1UCOMPILETIME       Fri Jul 28 17:39:16 CEST 2023                    
     1UDIR                                                               
     1UDBN                                                               
     1UMAT    1EL                                                        
@@ -3361,12 +3361,12 @@
     1PSTEP                         2           1           1          
   100CL  101 1.000000000          34                     0    1           1
  -4  CONTACT     6    1
- -5  COPEN       1    4    1    1
- -5  CSLIP1      1    4    2    2
- -5  CSLIP2      1    4    3    3
- -5  CPRESS      1    4    1    2
- -5  CSHEAR1     1    4    2    3
- -5  CSHEAR2     1    4    3    1
+ -5  COPEN       1    1    0    0
+ -5  CSLIP1      1    1    0    0
+ -5  CSLIP2      1    1    0    0
+ -5  CPRESS      1    1    0    0
+ -5  CSHEAR1     1    1    0    0
+ -5  CSHEAR2     1    1    0    0
  -1       579-2.29325E-05 0.00000E+00 0.00000E+00 2.29325E+02 0.00000E+00 0.00000E+00
  -1       580-2.29325E-05 0.00000E+00 0.00000E+00 2.29325E+02 0.00000E+00 0.00000E+00
  -1       581-2.29327E-05 0.00000E+00 0.00000E+00 2.29327E+02 0.00000E+00 0.00000E+00

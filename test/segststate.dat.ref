@@ -1,4 +1,7 @@
 
+                        S T E P       1
+
+
      E I G E N V A L U E   O U T P U T
 
   NODAL   MODE NO    EIGENVALUE                      FREQUENCY
@@ -509,6 +512,9 @@ MODE NO.   X-COMPONENT     Y-COMPONENT     Z-COMPONENT     X-ROTATION      Y-ROT
     6          8          B
     6          9          B
     6         10          B
+
+                        S T E P       2
+
 
 P A R T I C I P A T I O N   F A C T O R S   F O R   F R E Q U E N C Y    0.5000000000000E+06 (CYCLES/TIME)
 
