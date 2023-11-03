@@ -14,6 +14,12 @@ test/*.fcv
 test/*.vwf
 test/*.fbd
 test/*.out
+test/*.dof
+test/*.sti
+test/*.str
+test/*.mas
+test/*.sen0
+test/*.sen1
 scripts/error.*
 scripts/temp.*
 scripts/log.*
