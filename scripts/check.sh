@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CCX_EXE=ccx_2.19_MT
+CCX_EXE=ccx_2.21_MT
 
 while true
 do
